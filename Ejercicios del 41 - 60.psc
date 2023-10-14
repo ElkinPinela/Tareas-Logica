@@ -19,13 +19,6 @@ algoritmo ejercicios41_67
 	//ejercicio58
 	//ejercicio59
 	//ejercicio60
-	//ejercicio61
-	//ejercicio62
-	//ejercicio63
-	//ejercicio64
-	//ejercicio65
-	//ejercicio66
-	//ejercicio67
 FinAlgoritmo
 
 funcion ejercicio41
@@ -477,80 +470,3 @@ Funcion ejercicio60 = multiplicacionf(num1,num2)
 	Definir Cincuenta5 Como Entero;
 	cincuenta5=num1*num2;
 FinFuncion
-
-Funcion ejercicio61
-	// Función sin return para determinar si un número es par o impar.
-	//Entrada =Definir variable: a=0? ,b=0?;
-	//Proceso = Leer a=0?; realizamos la operacoion de la variable b=a mood 2 ,
-    //iniciamos una condicion: si b==0 entonces el numero es par si no es impar
-	//Salida  = "es par"o "es impar"
- 	Definir a,b  como enteros;
-	Escribir "Ingrese un numero";
-	Leer a;
-	b = a mod 2;
-	Si b == 0 Entonces
-		Escribir null;
-	SiNo
-		Escribir null;
-	Fin Si
-FinFuncion
-
-funcion ejercicio62=area(a,b)
-	//Función con parámetros y return para calcular el área de un rectángulo.
-	//Entrada = Definir variables: a=0? ,b=0? ,c=0?;
-	//Proceso = Leer a=0?,Leer b=0?, en la variable c realizamos la operacion c=a*b;
-	//Salida  = c;
-	Definir ejercicio62 Como entero;
-	ejercicio62=a*b;
-FinFuncion
-
-Funcion ejercicio63
-	// Función sin parámetros para imprimir tu nombre. 
-	Escribir "Elkin";
-FinFuncion
-
-Funcion ejercicio64=convertirf(a,1.8,32)
-	//Función con return para convertir grados Celsius a Fahrenheit.
-	//Entrada = Definir variable: a=0? ,convertir=a*1.8+32;
-	//Proceso = Leer a=0?; en la variable convertir realizamos la operacion convertir=a*1.8+32;
-	//Salida  = convertir;
-	Definir ejercicio64 Como real;
-	ejercicio64=a*1.8+32;
-FinFuncion
-
-Funcion ejercicio65
-	//Función con parámetros para contar un carácter en una frase.
-	cadena <- "Hola, mundo"
-	num_caracteres <- Longitud(cadena)
-	Escribir(num_caracteres)
-	
-FinFuncion
-
-Funcion ejercicio66
-	//Función sin return para imprimir números del 1 al 10. 
-	//Entrada = Definir variable: i=(1-10);
-	//Proceso = inicializamos un ciclo for donde i   ira del 1 al 10 con paso de uno en uno ;
-	//Salida  = i;
-	Para i<-1 Hasta 10 Con Paso 1 Hacer
-		Escribir i;
-	Fin Para
-FinFuncion
-
-Funcion ejercicio67
-	//Función con parámetros y return para sumar una lista de números
-	//Entrada = Definir variables: a=0?  , i=5; 
-	//Proceso = le damos a a el valor de 0 y inicializamos un ciclo for donde i   ira del 1 al 5 con paso de uno en uno;}
-	//los numeros ingresados se guardaran en numerola(i) y se sumaran en a=a+numerola(i);
-	//Salida  = Mostrar =a;
-	Definir a Como Entero;
-	Dimension numerola[5]
-	a=0;
-	Para i<-1 Hasta 5 Con Paso 1 Hacer
-		Escribir "ingrese un numero"
-		Leer numerola(i);
-		a=a+numerola(i);
-	Fin Para
-	Escribir "Esta es la suma total de esa lista de numeros = " a;
-FinFuncion
-
-
