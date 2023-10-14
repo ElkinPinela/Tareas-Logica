@@ -257,7 +257,7 @@ Funcion ejercicio51
 	// Definir variables
 	definir numeros, suma, i Como Entero;
 	// Dimencion del verctor
-	Dimension numeros[5];
+	Dimension numeros[i];
 	// Inicializar variables
 	suma=0
 	// Inicializar el vector
@@ -376,11 +376,49 @@ Funcion ejercicio54
 FinFuncion
 
 Funcion ejercicio55
-
+	//Contar elementos pares: Cuenta cuántos números pares hay en un arreglo de números enteros.
+	//Entrada = Definir variables: a[?], vesctor=(i) , suma=0?;
+	//Proceso = Leer vesctor(i),leeremos a vesctor(i) 5 veces dentro del ciclo for ya que es es el tamaño del arreglo,
+	//una vez acabado el ciclo iniciamos otro con los mismo parametros pero dentro de este ira una concion si-entonces,
+	// si vector(i) mod 2es igual a 0 en tonces guardarlo en la variable suma donde suma ira sumando cada vez que esta codicion se cumpla.
+	//Salida  =	mostramos el total de numeros pares en el arreglo previamente realizado .
+	Definir a,vector,suma como enteros;
+	a=5;
+	suma=0;
+	Dimension vector[a];
+	Para i<-1 Hasta a Con Paso 1 Hacer
+		Escribir "ingrese un numero";
+		leer vector(i);
+	Fin Para
+	
+	Para i<-1 Hasta a Con Paso 1 Hacer
+		Si vector(i) mod 2 == 0  Entonces
+			suma=suma+1;
+		FinSi
+		
+	FinPara
+	Escribir "hay ",suma," numeros pares en el arreglo";
 FinFuncion
 
 Funcion ejercicio56
-	
+	//Inversión de un arreglo: Invierte el orden de los elementos en un arreglo. Por ejemplo, [1, 2, 3] se convierte en [3, 2, 1].
+	//Entrada = definir variable: dimension a[?],b[?],i;
+	//Proceso = inicializamos un ciclo for donde i ira de 1 hasta el tamaño de los arreglos con paso de uno en uno en cada uno; a[i] tendra el valor
+	//del 1 al 5 , Mientras b[i] tendra los valores del 5 al 1 ;
+	//Salida  = a[i] y b[i]
+	Definir a,b,i como entero;
+	Dimension a[5],b[ 5]
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		a[i]= i*1;
+		b[5+1-i]=a[i];
+	Fin Para
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir a[i];
+	Fin Para
+	Escribir "-----";
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir b[i]
+	Fin Para
 FinFuncion
 
 Funcion ejercicio57
@@ -417,63 +455,102 @@ Funcion ejercicio57
 	Fin Si
 FinFuncion
 
-Funcion ejercicio58
-	//Función sin parámetros para saludar.	
-	Escribir "Hola ";
+Funcion Cincuenta58
+	//Función sin parámetros para saludar.
+	Escribir "Hola";
 FinFuncion
 
-Funcion ejercicio59
+Funcion ejercicio59 = sumaf (num1,num2)
 	//Función con parámetros para sumar dos números.
 	//Entrada =definir variable: a=0? ,b=0?,suma=0?;
 	//Proceso =Leer a=0?,Leer b=0?; a y b se sumaran en la variable sumar=a+b=0?;
 	//Salida  = sumar;
-	Definir a, b, suma Como Entero;
-	Escribir "ingrese dos numeros para sumarlos";
-	Leer a;
-	leer b;
-	suma=a+b;
-	Escribir suma;
+	Definir ejercicio59 como entero;
+	ejercicio59=num1+num2;
 FinFuncion
 
-Funcion ejercicio60
+Funcion ejercicio60 = multiplicacionf(num1,num2)
 	//Función con return para multiplicar dos números.
 	//Entrada = Definir variable: a=0? , b=0? , multiplicacion=0?;
 	//Proceso = Leer a=0? ,leer b=0?: a y b se multiplicaran en la variable multiplicar=a*b;
 	//Salida  = multiplicar;
-	Definir a, b, multiplicacion Como Entero;
-	Escribir "ingrese dos numeros para multiplicarlos";
-	Leer a;
-	leer b;
-	multiplicacion=a*b;
-	Escribir multiplicacion;
+	Definir Cincuenta5 Como Entero;
+	cincuenta5=num1*num2;
 FinFuncion
 
 Funcion ejercicio61
-	
+	// Función sin return para determinar si un número es par o impar.
+	//Entrada =Definir variable: a=0? ,b=0?;
+	//Proceso = Leer a=0?; realizamos la operacoion de la variable b=a mood 2 ,
+    //iniciamos una condicion: si b==0 entonces el numero es par si no es impar
+	//Salida  = "es par"o "es impar"
+ 	Definir a,b  como enteros;
+	Escribir "Ingrese un numero";
+	Leer a;
+	b = a mod 2;
+	Si b == 0 Entonces
+		Escribir null;
+	SiNo
+		Escribir null;
+	Fin Si
 FinFuncion
 
-Funcion ejercicio62
-	
+funcion ejercicio62=area(a,b)
+	//Función con parámetros y return para calcular el área de un rectángulo.
+	//Entrada = Definir variables: a=0? ,b=0? ,c=0?;
+	//Proceso = Leer a=0?,Leer b=0?, en la variable c realizamos la operacion c=a*b;
+	//Salida  = c;
+	Definir ejercicio62 Como entero;
+	ejercicio62=a*b;
 FinFuncion
 
 Funcion ejercicio63
-	
+	// Función sin parámetros para imprimir tu nombre. 
+	Escribir "Elkin";
 FinFuncion
 
-Funcion ejercicio64
-	
+Funcion ejercicio64=convertirf(a,1.8,32)
+	//Función con return para convertir grados Celsius a Fahrenheit.
+	//Entrada = Definir variable: a=0? ,convertir=a*1.8+32;
+	//Proceso = Leer a=0?; en la variable convertir realizamos la operacion convertir=a*1.8+32;
+	//Salida  = convertir;
+	Definir ejercicio64 Como real;
+	ejercicio64=a*1.8+32;
 FinFuncion
 
 Funcion ejercicio65
+	//Función con parámetros para contar un carácter en una frase.
+	cadena <- "Hola, mundo"
+	num_caracteres <- Longitud(cadena)
+	Escribir(num_caracteres)
 	
 FinFuncion
 
 Funcion ejercicio66
-	
+	//Función sin return para imprimir números del 1 al 10. 
+	//Entrada = Definir variable: i=(1-10);
+	//Proceso = inicializamos un ciclo for donde i   ira del 1 al 10 con paso de uno en uno ;
+	//Salida  = i;
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir i;
+	Fin Para
 FinFuncion
 
 Funcion ejercicio67
-	
+	//Función con parámetros y return para sumar una lista de números
+	//Entrada = Definir variables: a=0?  , i=5; 
+	//Proceso = le damos a a el valor de 0 y inicializamos un ciclo for donde i   ira del 1 al 5 con paso de uno en uno;}
+	//los numeros ingresados se guardaran en numerola(i) y se sumaran en a=a+numerola(i);
+	//Salida  = Mostrar =a;
+	Definir a Como Entero;
+	Dimension numerola[5]
+	a=0;
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir "ingrese un numero"
+		Leer numerola(i);
+		a=a+numerola(i);
+	Fin Para
+	Escribir "Esta es la suma total de esa lista de numeros = " a;
 FinFuncion
 
 
