@@ -447,26 +447,3 @@ Funcion ejercicio57
 		Escribir "no se ha encontrado ese numero en ninguna posicion";	
 	Fin Si
 FinFuncion
-
-Funcion Cincuenta58
-	//Función sin parámetros para saludar.
-	Escribir "Hola";
-FinFuncion
-
-Funcion ejercicio59 = sumaf (num1,num2)
-	//Función con parámetros para sumar dos números.
-	//Entrada =definir variable: a=0? ,b=0?,suma=0?;
-	//Proceso =Leer a=0?,Leer b=0?; a y b se sumaran en la variable sumar=a+b=0?;
-	//Salida  = sumar;
-	Definir ejercicio59 como entero;
-	ejercicio59=num1+num2;
-FinFuncion
-
-Funcion ejercicio60 = multiplicacionf(num1,num2)
-	//Función con return para multiplicar dos números.
-	//Entrada = Definir variable: a=0? , b=0? , multiplicacion=0?;
-	//Proceso = Leer a=0? ,leer b=0?: a y b se multiplicaran en la variable multiplicar=a*b;
-	//Salida  = multiplicar;
-	Definir Cincuenta5 Como Entero;
-	cincuenta5=num1*num2;
-FinFuncion
